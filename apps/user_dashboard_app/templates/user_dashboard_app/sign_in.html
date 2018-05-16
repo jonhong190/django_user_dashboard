@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Sign In</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    {% load static %}
+    <link rel='stylesheet' href='{% static "user_dashboard_app/css/bootstrap.css" %}'>
+</head>
+<body>
+    <div id='sign_in_wrap' class='hero-unit'>
+        <form action='/sign_in' method='post'>
+            {% csrf_token %}
+            <h3>Sign Into The Wall</h3>
+            <label for='email'>Email:</label>
+            <input type='text' class='form-control' name='email'>
+            <label for='password'>Password:</label>
+            <input type='password' class='form-control' name='password'>
+            <br>
+            <button type='submit' class='btn btn-primary'>Sign In</button>
+            <br>
+            <p>No log in info? Register <a href='/register'>Here</a></p>
+        </form>
+</body>
+</html>

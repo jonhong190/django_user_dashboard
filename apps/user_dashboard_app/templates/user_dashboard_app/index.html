@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>User Dashboard</title>
+    {% load static %}
+    <link rel='stylesheet' href='{% static "user_dashboard_app/css/bootstrap.css" %}'>
+</head>
+<body>
+    <div id='wrapper' class='hero-unit'>
+        <div id='header'>
+            <nav class='navbar navbar-light bg-light"'>
+                <h1>Welcome to the Wall</h1>
+                <br>
+                <p>A cool application displaying fundamental aspects of an MVC framework!</p>
+                <br>
+                <a class='navbar-brand' href='/sign_in'>Start Here</a>
+            </nav>
+        </div>
+        <div id='selection' class='hero-unit'>
+            <ul>
+                <li>
+                    <h4>Manage Users</h4>
+                    <p>Admins can add and update users!</p>
+                </li>
+                <li>
+                    <h4>Leave Messages</h4>
+                    <p>Users can leave message and comments to each other!</p>
+                </li>
+                <li>
+                    <h4>Edit User Information</h4>
+                    <p>User can edit their own personal information!</p>
+                </li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
